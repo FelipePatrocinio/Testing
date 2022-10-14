@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221013 22:15:08.451" rpa="false" schemaversion="3">
+<suite id="s1" name="Radio" source="c:\Users\Felipe.DESKTOP-NTTVAHA\Desktop\Curso_QaAcademy\web\radio.robot">
+<test id="s1-t1" name="Selecionando por ID" line="8">
+<kw name="Nova sessão" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221013 22:15:09.067" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20221013 22:15:09.066" endtime="20221013 22:15:15.177"/>
+</kw>
+<status status="PASS" starttime="20221013 22:15:09.064" endtime="20221013 22:15:15.179"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/radios</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221013 22:15:15.186" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com//radios'</msg>
+<status status="PASS" starttime="20221013 22:15:15.183" endtime="20221013 22:15:15.639"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>guardians</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20221013 22:15:15.646" level="INFO">Selecting 'guardians' from radio button 'movies'.</msg>
+<status status="PASS" starttime="20221013 22:15:15.642" endtime="20221013 22:15:15.729"/>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>guardians</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20221013 22:15:15.731" level="INFO">Verifying radio button 'movies' has selection 'guardians'.</msg>
+<status status="PASS" starttime="20221013 22:15:15.730" endtime="20221013 22:15:15.976"/>
+</kw>
+<kw name="Encerra sessão" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221013 22:15:16.117" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221013 22:15:15.979" endtime="20221013 22:15:16.117"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221013 22:15:16.119" endtime="20221013 22:15:18.252"/>
+</kw>
+<status status="PASS" starttime="20221013 22:15:15.978" endtime="20221013 22:15:18.256"/>
+</kw>
+<status status="PASS" starttime="20221013 22:15:09.061" endtime="20221013 22:15:18.259"/>
+</test>
+<test id="s1-t2" name="Selecinando por value" line="12">
+<kw name="Nova sessão" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221013 22:15:18.287" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20221013 22:15:18.284" endtime="20221013 22:15:23.881"/>
+</kw>
+<status status="PASS" starttime="20221013 22:15:18.279" endtime="20221013 22:15:23.888"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/radios</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221013 22:15:23.895" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com//radios'</msg>
+<status status="PASS" starttime="20221013 22:15:23.892" endtime="20221013 22:15:24.382"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>iron-man</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20221013 22:15:24.392" level="INFO">Selecting 'iron-man' from radio button 'movies'.</msg>
+<status status="PASS" starttime="20221013 22:15:24.389" endtime="20221013 22:15:24.481"/>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>movies</arg>
+<arg>iron-man</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20221013 22:15:24.483" level="INFO">Verifying radio button 'movies' has selection 'iron-man'.</msg>
+<status status="PASS" starttime="20221013 22:15:24.482" endtime="20221013 22:15:24.523"/>
+</kw>
+<kw name="Encerra sessão" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221013 22:15:24.649" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221013 22:15:24.526" endtime="20221013 22:15:24.649"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221013 22:15:24.650" endtime="20221013 22:15:26.795"/>
+</kw>
+<status status="PASS" starttime="20221013 22:15:24.525" endtime="20221013 22:15:26.796"/>
+</kw>
+<status status="PASS" starttime="20221013 22:15:18.271" endtime="20221013 22:15:26.797"/>
+</test>
+<status status="PASS" starttime="20221013 22:15:08.473" endtime="20221013 22:15:26.801"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Radio">Radio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
