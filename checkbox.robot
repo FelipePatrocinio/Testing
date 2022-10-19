@@ -11,7 +11,7 @@ ${check_panter}        xpath://*[@id='checkboxes']/input[7]
 
 *** Test Cases ***
 Marqued option whith ID
-    Go To                               ${url}/checkboxes 
+    Go To                              ${url}/checkboxes 
     Select Checkbox                    ${check_thor}
     Checkbox Should be selected        ${check_thor}       
     
